@@ -116,7 +116,7 @@ const app = {}
         const filePath = path.join(__dirname, fileName);
 
         if (path.extname(fileName) !== ".txt") {
-            console.log("Hanya Dapat Membaca File Teks (.txt)")
+            console.log("Hanya Dapat Membaca File Teks (.txt)");
             rl.close();
             return;
         }
@@ -125,7 +125,7 @@ const app = {}
             if (err) {
                 console.log("Gagal Membaca File : ", err.message);
             } else {
-                console.log(`Isi Dari File ${fileName} : \n${data}`)
+                console.log(`Isi Dari File ${fileName} : \n${data}`);
             }
             rl.close();
         });
